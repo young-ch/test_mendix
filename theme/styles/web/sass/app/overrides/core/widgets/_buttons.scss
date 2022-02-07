@@ -1,0 +1,131 @@
+/* ==========================================================================
+   Buttons
+
+   Default Bootstrap and Mendix Buttons
+========================================================================== */
+
+.btn,
+.mx-button {
+    padding: 0.5em 1.2em;
+    font-weight: $font-weight-normal;
+    border-radius: 50px;
+}
+
+//== Design Properties
+//## Helper classes to change the look and feel of the component
+//-------------------------------------------------------------------------------------------------------------------//
+// Color variations
+.btn,
+.btn-default {
+    &:hover,
+    &:focus,
+    &:active {
+        color: #fff;
+    }
+}
+
+// Button Sizes
+.btn-lg {
+    padding: 0.6em 3em;
+}
+
+.btn-responsive {
+    @media (max-width: $screen-xs-max) {
+        width: 100%;
+    }
+}
+
+.btns-social {
+    .btn-social {
+        &:first-child {
+            margin-left: 0;
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.btn-social {
+    margin: $gutter-size 5px;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    border: 0;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-style: solid;
+    &.btn-sm {
+        width: 32px;
+        height: 32px;
+        &:before {
+            width: 16px;
+            height: 16px;
+            background-size: 16px 16px;
+        }
+    }
+    &:before {
+        content: '';
+        width: 28px;
+        height: 28px;
+        background-size: 28px 28px;
+        display: block;
+        background-repeat: no-repeat;
+    }
+    &.btn-facebook {
+        &:before {
+            background-image: url($facebook);
+        }
+    }
+    &.btn-instagram {
+        &:before {
+            background-image: url($instagram);
+        }
+    }
+    &.btn-linkedin {
+        &:before {
+            background-image: url($linkedin);
+        }
+    }
+    &.btn-twitter {
+        &:before {
+            background-image: url($twitter);
+        }
+    }
+}
+
+.toggle-btn {
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    &:before,
+    &:after,
+    a {
+        content: '';
+        background-color: $navigation-color;
+        height: 2px;
+        width: 30px;
+        display: block;
+        margin-top: 4px;
+        margin-bottom: 4px;
+    }
+}
+.btn + .btn {
+    margin-left: 5px;
+}
+
+.mx-dateinput-select-button,
+.mx-fileinput-upload-button {
+    @extend .btn-primary;
+}
+
+.widget-pagination .pagination .mx-button,
+.widget-pagination .pagination .btn {
+    padding: 5px;
+}
+
+.webmodelerEdit {
+    z-index: 9999;
+}

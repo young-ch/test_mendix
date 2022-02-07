@@ -1,0 +1,133 @@
+//
+// ██████╗  █████╗ ███████╗██╗ ██████╗
+// ██╔══██╗██╔══██╗██╔════╝██║██╔════╝
+// ██████╔╝███████║███████╗██║██║
+// ██╔══██╗██╔══██║╚════██║██║██║
+// ██████╔╝██║  ██║███████║██║╚██████╗
+// ╚═════╝ ╚═╝  ╚═╝╚══════╝╚═╝ ╚═════╝
+//
+
+//== Gray Shades
+//## Different gray shades to be used for our variables and components
+
+//== Step 1: Brand Colors
+$event-img-size: 220px !default;
+$bleed-margin: ($event-img-size / 2) * -1 !default;
+
+//
+//  █████╗ ██████╗ ██╗   ██╗ █████╗ ███╗   ██╗ ██████╗███████╗██████╗
+// ██╔══██╗██╔══██╗██║   ██║██╔══██╗████╗  ██║██╔════╝██╔════╝██╔══██╗
+// ███████║██║  ██║██║   ██║███████║██╔██╗ ██║██║     █████╗  ██║  ██║
+// ██╔══██║██║  ██║╚██╗ ██╔╝██╔══██║██║╚██╗██║██║     ██╔══╝  ██║  ██║
+// ██║  ██║██████╔╝ ╚████╔╝ ██║  ██║██║ ╚████║╚██████╗███████╗██████╔╝
+// ╚═╝  ╚═╝╚═════╝   ╚═══╝  ╚═╝  ╚═╝╚═╝  ╚═══╝ ╚═════╝╚══════╝╚═════╝
+//
+
+//== Typography
+//## Change your font family, weight, line-height, headings and more (used in components/typography)
+
+// Font Family Import (Used for google font plugin in theme creater https://ux.mendix.com/theme-creator.html)
+$font-family-import: 'https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600,700';
+@if $font-family-import != false {
+    // Only import, if the import is set
+    @import url($font-family-import);
+}
+
+// Font Family / False = fallback from Bootstrap (Helvetica Neue)
+$font-family-base: 'Open Sans', sans-serif;
+
+// Font Sizes
+$font-size-large: 18px;
+
+// Font Weights
+$font-weight-light: 200;
+
+// Spacing
+$font-header-margin: 0;
+
+//== Navigation
+//## Used in components/navigation
+
+// Default Navigation styling
+$navigation-item-padding: 8px 20px;
+
+$navigation-font-size: 14px;
+
+// Navigation Sidebar
+$navsidebar-bg-hover: lighten($navsidebar-bg, 10);
+$navsidebar-bg-active: lighten($navsidebar-bg, 10);
+$navsidebar-color: rgba(0, 0, 0, 0.7);
+$navsidebar-color-hover: #000;
+$navsidebar-color-active: #000;
+
+// Navigation topbar
+$navtopbar-font-size: 14px;
+
+$navtopbar-bg-hover: $topbar-bg;
+$navtopbar-bg-active: $topbar-bg;
+$navtopbar-color: rgba(255, 255, 255, .9);
+$navtopbar-color-hover: #fff;
+$navtopbar-color-active: #fff;
+
+//== Form
+//## Used in components/inputs
+
+// Form Label
+$form-label-color: #222222;
+$form-label-size: 14px;
+$form-label-weight: $font-weight-bold;
+
+// Form Input dimensions
+$form-input-height: 48px;
+$form-input-font-size: 14px;
+$form-input-border-radius: 0;
+
+// Form Input styling
+$form-input-border-color: #e4e4e3;
+
+//== Buttons
+//## Define background-color, border-color and text. Used in components/buttons
+
+// Default button style
+$btn-border-radius: 0;
+
+// Button Text Color
+$btn-default-color: $brand-default;
+
+// Button Background Color
+$btn-inverse-bg-hover: mix($btn-inverse-bg, black, 80%);
+
+//
+// ███████╗██╗  ██╗██████╗ ███████╗██████╗ ████████╗
+// ██╔════╝╚██╗██╔╝██╔══██╗██╔════╝██╔══██╗╚══██╔══╝
+// █████╗   ╚███╔╝ ██████╔╝█████╗  ██████╔╝   ██║
+// ██╔══╝   ██╔██╗ ██╔═══╝ ██╔══╝  ██╔══██╗   ██║
+// ███████╗██╔╝ ██╗██║     ███████╗██║  ██║   ██║
+// ╚══════╝╚═╝  ╚═╝╚═╝     ╚══════╝╚═╝  ╚═╝   ╚═╝
+//
+
+//== Modals
+//## Default Mendix Modal, Blocking Modal and Login Modal (used in components/modals)
+
+// Background Color
+$modal-header-bg: $bg-color;
+
+//== Groupbox
+//## Default variables for Groupbox Widget (used in components/groupbox)
+
+// Text Color
+$groupbox-default-color: #fff;
+
+//== Spacing
+//## Advanced layout options (used in base/mixins/default-spacing)
+
+// Layout spacing
+$layout-spacing-top: 15px;
+$layout-spacing-right: 15px;
+$layout-spacing-bottom: 15px;
+$layout-spacing-left: 15px;
+
+$m-layout-spacing-top: 30px;
+$m-layout-spacing-right: 30px;
+$m-layout-spacing-bottom: 30px;
+$m-layout-spacing-left: 30px;

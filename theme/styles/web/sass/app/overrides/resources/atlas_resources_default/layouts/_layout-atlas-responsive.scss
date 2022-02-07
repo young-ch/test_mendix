@@ -1,0 +1,26 @@
+/* ==========================================================================
+   Atlas layout
+
+   Extra styling for responsive layouts
+========================================================================== */
+.layout-atlas-responsive-default {
+    .region-content {
+        .event-info {
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+    }
+}
+
+// All responsive layouts
+.layout-atlas-responsive-default,
+.layout-atlas-responsive-topbar {
+    // Topbar
+    .region-topbar {
+        .toggle-btn {
+            @media (max-width: $screen-xs-max) {
+                display: inline-flex;
+            }
+        }
+    }
+}

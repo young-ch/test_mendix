@@ -1,0 +1,144 @@
+/* ==========================================================================
+   Typography
+========================================================================== */
+
+p,
+.p {
+    line-height: $line-height-base * 1.1;
+    margin: 0 0 10px;
+}
+
+h1,
+.h1,
+.h1 > * {
+    @media (max-width: $screen-xs-max) {
+        font-size: $font-size-h2;
+    }
+}
+
+h2,
+.h2,
+.h2 > * {
+    @media (max-width: $screen-xs-max) {
+        font-size: $font-size-h3;
+    }
+}
+
+h3,
+.h3,
+.h3 > * {
+    @media (max-width: $screen-xs-max) {
+        font-size: $font-size-h4;
+    }
+}
+
+h4,
+.h4,
+.h4 > * {
+    @media (max-width: $screen-xs-max) {
+        font-size: $font-size-h5;
+    }
+}
+
+h5,
+.h5,
+.h5 > * {
+    @media (max-width: $screen-xs-max) {
+        font-size: $font-size-h5;
+    }
+}
+
+h6,
+.h6,
+.h6 > * {
+    @media (max-width: $screen-xs-max) {
+        font-size: $font-size-h6;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    margin: $font-header-margin;
+    color: $font-color-header;
+    font-weight: $font-weight-header;
+    line-height: 1.6;
+}
+
+// Color variations
+.text-default,
+.text-default:hover {
+    &:before {
+        background-color: $font-color-default !important;
+    }
+}
+
+.text-primary,
+.text-primary:hover {
+    &:before {
+        background-color: $brand-primary !important;
+    }
+}
+
+.text-info,
+.text-info:hover {
+    &:before {
+        background-color: $brand-info !important;
+    }
+}
+
+.text-success,
+.text-success:hover {
+    &:before {
+        background-color: $brand-success !important;
+    }
+}
+
+.text-warning,
+.text-warning:hover {
+    &:before {
+        background-color: $brand-warning !important;
+    }
+}
+
+.text-danger,
+.text-danger:hover {
+    &:before {
+        background-color: $brand-danger !important;
+    }
+}
+
+.text-header {
+    &:before {
+        background-color: $font-color-header !important;
+    }
+}
+
+.text-detail {
+    &:before {
+        background-color: $font-color-detail !important;
+    }
+}
+
+.text-white {
+    &:before {
+        background-color: #fff !important;
+    }
+}
+
+.text-rating {
+    h2 {
+        line-height: 1.1;
+        margin-right: 10px;
+        letter-spacing: -0.115em;
+    }
+}

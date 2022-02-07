@@ -1,0 +1,30 @@
+@mixin button-variant-override($color, $background, $border, $hover) {
+    @include button-variant($color, $background, $border, $hover) {
+        // Button bordered
+        &.btn-bordered {
+            background-color: transparent;
+        }
+        &.btn-outline {
+            margin: 6px;
+            position: relative;
+            &:before {
+                position: absolute;
+                left: -7px;
+                right: -7px;
+                top: -7px;
+                bottom: -7px;
+                content: '';
+                border-radius: 50px;
+                border: 2px solid $border;
+            }
+            &:hover {
+                &:before {
+                    border: 2px solid $hover;
+                }
+            }
+        }
+        &.btn-square {
+            border-radius: 3px;
+        }
+    }
+}

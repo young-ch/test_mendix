@@ -1,0 +1,7 @@
+.w-100 {
+    width: 100% !important;
+}
+
+.fixed-width {
+    max-width: 370px;
+}

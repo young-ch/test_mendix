@@ -1,0 +1,43 @@
+span.widget-star-rating-full-widget {
+    color: #ffd700;
+}
+
+.widget-star-rating-empty {
+    color: $default-border-color;
+}
+
+.widget-star-rating {
+    .glyphicon-star-empty,
+    .glyphicon-star {
+        font-family: fontAwesome;
+        display: inline-flex;
+        margin: 8px;
+        &.widget-star-rating-font-small {
+            margin: 3px;
+        }
+        &:before {
+            content: '\f005';
+        }
+        &:hover {
+            -webkit-animation: stretch-bounce 0.5s ease-in-out;
+        }
+    }
+}
+
+@-webkit-keyframes stretch-bounce {
+    0% {
+        -webkit-transform: scale(1);
+    }
+    25% {
+        -webkit-transform: scale(1.5);
+    }
+    50% {
+        -webkit-transform: scale(0.9);
+    }
+    75% {
+        -webkit-transform: scale(1.2);
+    }
+    100% {
+        -webkit-transform: scale(1);
+    }
+}

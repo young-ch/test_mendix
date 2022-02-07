@@ -1,0 +1,241 @@
+/* ==========================================================================
+   Navigation
+
+   Default Mendix Navigation Bar
+========================================================================== */
+.mx-navbar {
+    ul.nav {
+        & > li.mx-navbar-item > a {
+            min-height: 0;
+            padding: $navigation-item-padding;
+        }
+    }
+}
+
+//== Regions
+//## Behavior in the different regions
+//-------------------------------------------------------------------------------------------------------------------//
+// When used in topbar
+.region-topbar {
+    .mx-navbar {
+        background-color: $navtopbar-bg;
+        ul.nav {
+            /* Navigation item */
+            & > li.mx-navbar-item > a {
+                font-weight: $font-weight-normal;
+            }
+
+            li.mx-navbar-item:last-child {
+                a {
+                    border: 2px solid $navtopbar-color;
+                    border-radius: 50px;
+                    -webkit-transition: background-color 0.1s 0s ease-in-out, color 0.1s 0s ease-in-out;
+                    -moz-transition: background-color 0.1s 0s ease-in-out, color 0.1s 0s ease-in-out;
+                    -ms-transition: background-color 0.1s 0s ease-in-out, color 0.1s 0s ease-in-out;
+                    -o-transition: background-color 0.1s 0s ease-in-out, color 0.1s 0s ease-in-out;
+                    transition: background-color 0.1s 0s ease-in-out, color 0.1s 0s ease-in-out;
+                    margin-top: -2px;
+                    background-color: transparent;
+                    color: $navtopbar-color;
+                }
+                &:hover,
+                &:focus,
+                &.active {
+                    a {
+                        background-color: $btn-success-bg;
+                        color: $btn-success-color;
+                        border-color: $btn-success-bg;
+                    }
+                }
+            }
+
+            /* When hovering or the dropdown is open */
+            & > .mx-navbar-item > a:hover,
+            & > .mx-navbar-item > a:focus,
+            & > .mx-navbar-item.active a,
+            & > .mx-navbar-item.open > a,
+            & > .mx-navbar-item.open > a:hover,
+            & > .mx-navbar-item.open > a:focus {
+                color: $navtopbar-color-hover;
+                background-color: $navtopbar-bg-hover;
+                .caret {
+                    border-top-color: $navtopbar-color-hover;
+                    border-bottom-color: $navtopbar-color-hover;
+                }
+            }
+            & > .mx-navbar-item.open .dropdown-menu > li.mx-navbar-subitem.active a {
+                color: $navtopbar-sub-color-active;
+                background-color: $navtopbar-sub-bg-active;
+                .caret {
+                    border-top-color: $navtopbar-sub-color-active;
+                    border-bottom-color: $navtopbar-sub-color-active;
+                }
+            }
+        }
+        @media (max-width: $screen-sm) {
+            ul.nav > li.mx-navbar-item > a {
+            }
+            .mx-navbar-item.open .dropdown-menu {
+                background-color: $navtopbar-sub-bg;
+                & > li.mx-navbar-subitem > a {
+                    color: $navtopbar-sub-color;
+                    font-size: $navtopbar-sub-font-size;
+                    &:hover,
+                    &:focus {
+                        color: $navtopbar-sub-color-hover;
+                        background-color: $navtopbar-sub-bg-hover;
+                    }
+                    &.active {
+                        color: $navtopbar-sub-color-active;
+                        background-color: $navtopbar-sub-bg-active;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.region-topbar {
+    .mx-navbar {
+        ul.nav {
+            & > li.mx-navbar-item > a {
+                font-weight: $font-weight-normal;
+            }
+
+            li.mx-navbar-item:last-child {
+                a {
+                    border: 2px solid $navtopbar-color;
+                    border-radius: 50px;
+                    -webkit-transition: background-color 0.1s 0s ease-in-out, color 0.1s 0s ease-in-out;
+                    -moz-transition: background-color 0.1s 0s ease-in-out, color 0.1s 0s ease-in-out;
+                    -ms-transition: background-color 0.1s 0s ease-in-out, color 0.1s 0s ease-in-out;
+                    -o-transition: background-color 0.1s 0s ease-in-out, color 0.1s 0s ease-in-out;
+                    transition: background-color 0.1s 0s ease-in-out, color 0.1s 0s ease-in-out;
+                    margin-top: -2px;
+                    background-color: transparent;
+                    color: $navtopbar-color;
+                }
+                &:hover,
+                &:focus,
+                &.active {
+                    a {
+                        background-color: $btn-success-bg;
+                        color: $btn-success-color;
+                        border-color: $btn-success-bg;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.region-topbar.topbar-transparent {
+    .mx-navbar {
+        background-color: transparent;
+        ul.nav {
+            /* Navigation item */
+            & > li.mx-navbar-item > a {
+                color: rgba(255, 255, 255, 0.9);
+                font-size: $navtopbar-font-size;
+                font-weight: $font-weight-normal;
+
+                /* Dropdown arrow */
+                .caret {
+                    border-top-color: $navtopbar-color;
+                    border-bottom-color: $navtopbar-color;
+                }
+                &:hover,
+                &:focus,
+                &.active {
+                    color: #fff;
+                    background-color: transparent;
+                    .caret {
+                        border-top-color: $navtopbar-color-active;
+                        border-bottom-color: $navtopbar-color-active;
+                    }
+                }
+                &.active {
+                    color: #fff;
+                    background-color: transparent;
+                }
+
+                /* Dropdown */
+                .mx-navbar-submenu::before {
+                    border-color: transparent transparent $navtopbar-border-color transparent;
+                }
+
+                // Image
+                .glyphicon {
+                    font-size: $navtopbar-glyph-size;
+                }
+            }
+
+            li.mx-navbar-item:last-child {
+                a {
+                    border: 2px solid $btn-success-bg;
+                    border-radius: 50px;
+                    -webkit-transition: background-color 0.1s 0s ease-in-out, color 0.1s 0s ease-in-out;
+                    -moz-transition: background-color 0.1s 0s ease-in-out, color 0.1s 0s ease-in-out;
+                    -ms-transition: background-color 0.1s 0s ease-in-out, color 0.1s 0s ease-in-out;
+                    -o-transition: background-color 0.1s 0s ease-in-out, color 0.1s 0s ease-in-out;
+                    transition: background-color 0.1s 0s ease-in-out, color 0.1s 0s ease-in-out;
+                    margin-top: -2px;
+                    background-color: transparent;
+                    color: $btn-success-bg;
+                }
+                &:hover,
+                &:focus,
+                &.active {
+                    a {
+                        background-color: $btn-success-bg;
+                        color: $btn-success-color;
+                        border-color: $btn-success-bg;
+                    }
+                }
+            }
+
+            /* When hovering or the dropdown is open */
+            & > .mx-navbar-item > a:hover,
+            & > .mx-navbar-item > a:focus,
+            & > .mx-navbar-item.active a,
+            & > .mx-navbar-item.open > a,
+            & > .mx-navbar-item.open > a:hover,
+            & > .mx-navbar-item.open > a:focus {
+                color: #fff;
+                background-color: transparent;
+                .caret {
+                    border-top-color: $navtopbar-color-hover;
+                    border-bottom-color: $navtopbar-color-hover;
+                }
+            }
+            & > .mx-navbar-item.open .dropdown-menu > li.mx-navbar-subitem.active a {
+                color: $navtopbar-sub-color-active;
+                background-color: $navtopbar-sub-bg-active;
+                .caret {
+                    border-top-color: $navtopbar-sub-color-active;
+                    border-bottom-color: $navtopbar-sub-color-active;
+                }
+            }
+        }
+        @media (max-width: $screen-sm) {
+            ul.nav > li.mx-navbar-item > a {
+            }
+            .mx-navbar-item.open .dropdown-menu {
+                background-color: $navtopbar-sub-bg;
+                & > li.mx-navbar-subitem > a {
+                    color: $navtopbar-sub-color;
+                    font-size: $navtopbar-sub-font-size;
+                    &:hover,
+                    &:focus {
+                        color: $navtopbar-sub-color-hover;
+                        background-color: $navtopbar-sub-bg-hover;
+                    }
+                    &.active {
+                        color: $navtopbar-sub-color-active;
+                        background-color: $navtopbar-sub-bg-active;
+                    }
+                }
+            }
+        }
+    }
+}

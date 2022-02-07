@@ -1,0 +1,59 @@
+/* ==========================================================================
+   Inputs
+
+   The form-control class style all inputs
+========================================================================== */
+
+.form-control {
+    border: 2px solid $form-input-border-color;
+    font-size: $font-base-size;
+}
+
+.mx-dateinput {
+    .form-control {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    .mx-dateinput-select-button {
+        height: $form-input-height;
+        margin: 0;
+        border-top-right-radius: $form-input-border-radius;
+        border-bottom-right-radius: $form-input-border-radius;
+    }
+}
+
+// Read only form control class
+.form-control-static {
+    padding: 0 0 $form-input-padding-y;
+}
+
+// File input widget
+.mx-fileinput {
+    .mx-wrapped-form {
+        .mx-wrapped-input {
+            z-index: 100;
+        }
+        .mx-fileinput-upload-button {
+            height: $form-input-height;
+            top: -2px;
+            position: relative;
+        }
+    }
+}
+
+.form-img {
+    margin-bottom: $form-group-margin-bottom;
+}
+
+// Form Group
+.form-group {
+    .control-label {
+        margin-bottom: 5px;
+    }
+}
+
+.form-group_date {
+    p {
+        margin-bottom: 0;
+    }
+}

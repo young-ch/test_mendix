@@ -1,0 +1,65 @@
+/* ==========================================================================
+   Groupbox
+
+   Default Mendix Groupboxes
+========================================================================== */
+
+.mx-groupbox {
+    margin: 0 0 $gutter-size;
+    > .mx-groupbox-header {
+        padding: 15px;
+        background: darken($groupbox-default-bg, 10%);
+        font-size: $font-size-h4;
+        border-radius: 0;
+        .mx-groupbox-collapse-icon {
+            transition: transform 1s ease;
+            font-size: 22px;
+            margin-right: 5px;
+            margin-top: 2px;
+            &.glyphicon-plus {
+                font-family: fontawesome;
+                &:before {
+                    content: '\f054';
+                }
+            }
+            &.glyphicon-minus {
+                font-family: fontawesome;
+                transform: rotateZ(90deg);
+                &:before {
+                    content: '\f054';
+                }
+            }
+        }
+    }
+    > .mx-groupbox-body {
+        padding: $gutter-size;
+        border-width: 0 0 2px 0;
+        border-radius: 0;
+    }
+    .mx-groupbox-header + .mx-groupbox-body {
+        border-top: none;
+    }
+    &.collapsed > .mx-groupbox-header {
+        border-radius: 0;
+        background: $groupbox-default-bg;
+    }
+    &.collapsed > .mx-groupbox-body {
+    }
+}
+
+.groupbox-padding {
+    padding: 15px;
+}
+
+.groupbox-slide.mx-groupbox {
+    > .mx-groupbox-body {
+        padding: 0;
+        max-height: 2000px;
+        overflow: hidden;
+        transition: max-height 1s ease;
+    }
+    &.collapsed > .mx-groupbox-body {
+        display: block !important;
+        max-height: 0;
+    }
+}

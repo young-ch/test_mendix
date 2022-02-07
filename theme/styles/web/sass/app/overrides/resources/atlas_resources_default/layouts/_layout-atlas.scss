@@ -1,0 +1,84 @@
+/* ==========================================================================
+   Atlas layout
+
+   The core stucture of all atlas layouts
+========================================================================== */
+.layout-atlas {
+    // Sidebar
+    .region-sidebar {
+        .mx-layoutcontainer-wrapper {
+            z-index: 10;
+        }
+    }
+
+    // Topbar
+    .region-topbar {
+        position: inherit;
+        width: 100%;
+        border-bottom: 0;
+        box-shadow: none;
+
+        &::before {
+            display: none;
+        }
+
+        &.topbar-transparent {
+            position: absolute;
+            left: 0;
+            top: 0;
+            background-color: transparent;
+        }
+
+        // Topbar Content
+        .topbar-content {
+            justify-content: flex-start;
+            padding: 0 $gutter-size;
+        }
+
+        // Toggle btn
+        .toggle-btn {
+            margin-right: 0;
+            padding: 5px 10px;
+            position: absolute;
+            right: 0;
+            color: #fff;
+        }
+
+        .mx-navbar {
+            display: flex;
+            margin-left: 0;
+            align-items: center;
+            width: 100%;
+            justify-content: flex-end;
+        }
+    }
+    .region-footer {
+        background-color: #1f1f1f;
+        .footer-content {
+            color: rgba(255, 255, 255, 0.8);
+            padding: $gutter-size * 2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .img-poweredby {
+            height: 36px;
+            margin-left: 10px;
+        }
+    }
+    .mx-scrollcontainer-open {
+        .region-content {
+            position: relative;
+            &:before {
+                background-color: rgba(0, 0, 0, 0.7);
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                content: '';
+                z-index: 3;
+            }
+        }
+    }
+}

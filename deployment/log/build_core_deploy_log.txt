@@ -1,0 +1,11 @@
+Buildfile: E:\Studio Tour-main\deployment\build_core.xml
+
+deploy:
+     [copy] Copying 46 files to E:\Studio Tour-main\deployment
+     [copy] Copying 69 files to E:\Studio Tour-main\deployment\model\lib\userlib
+     [copy] Copying 2 files to E:\Studio Tour-main\deployment\model\resources
+
+BUILD SUCCESSFUL
+Total time: 0 seconds
+
+

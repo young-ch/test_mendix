@@ -1,0 +1,11 @@
+/* ==========================================================================
+   Dataview
+
+   Default Mendix Dataview Widget. The data view is used for showing the contents of exactly one object
+========================================================================== */
+
+.mx-dataview {
+    .mx-dataview-controls {
+        border-top: 0;
+    }
+}

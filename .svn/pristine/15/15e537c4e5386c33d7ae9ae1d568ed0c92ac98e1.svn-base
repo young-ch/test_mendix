@@ -1,0 +1,15 @@
+.bleed-top {
+    margin-top: $bleed-margin !important;
+}
+
+.bleed-bottom {
+    margin-bottom: $bleed-margin !important;
+}
+
+.bleed-left {
+    margin-left: $bleed-margin !important;
+}
+
+.bleed-right {
+    margin-right: $bleed-margin !important;
+}

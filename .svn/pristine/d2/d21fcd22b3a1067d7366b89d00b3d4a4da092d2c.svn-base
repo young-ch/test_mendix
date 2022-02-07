@@ -1,0 +1,160 @@
+/* ==========================================================================
+   Images
+
+   Default Mendix Image Widgets
+========================================================================== */
+
+img.company-logo {
+    margin-bottom: $gutter-size * 2;
+}
+
+img.fit-cover,
+.fit-cover img {
+    object-fit: cover !important;
+}
+
+img.fit-contain,
+.fit-contain img {
+    object-fit: contain !important;
+}
+
+img.fit-fill,
+.fit-fill img {
+    object-fit: fill !important;
+}
+
+img.fit-none,
+.fit-none img {
+    object-fit: none !important;
+}
+
+img.bp-left-top,
+.bp-left-top img {
+    background-position: left top !important;
+}
+img.bp-left-center,
+.bp-left-center img {
+    background-position: left center !important;
+}
+img.bp-left-bottom,
+.bp-left-bottom img {
+    background-position: left bottom !important;
+}
+
+img.bp-right-top,
+.bp-right-top img {
+    background-position: right top !important;
+}
+img.bp-right-center,
+.bp-right-center img {
+    background-position: right center !important;
+}
+img.bp-right-bottom,
+.bp-right-bottom img {
+    background-position: right bottom !important;
+}
+
+img.bp-center-top,
+.bp-center-top img {
+    background-position: center top !important;
+}
+img.bp-center-center,
+.bp-center-center img {
+    background-position: center center !important;
+}
+img.bp-center-bottom,
+.bp-center-bottom img {
+    background-position: center bottom !important;
+}
+
+img.img-boxshadow,
+.img-boxshadow img {
+    -webkit-box-shadow: 0 0 25px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 25px 5px rgba(0, 0, 0, 0.1);
+}
+
+img.op-left-top,
+.op-left-top img {
+    object-position: left top !important;
+}
+img.op-left-center,
+.op-left-center img {
+    object-position: left center !important;
+}
+img.op-left-bottom,
+.op-left-bottom img {
+    object-position: left bottom !important;
+}
+
+img.op-right-top,
+.op-right-top img {
+    object-position: right top !important;
+}
+img.op-right-center,
+.op-right-center img {
+    object-position: right center !important;
+}
+img.op-right-bottom,
+.op-right-bottom img {
+    object-position: right bottom !important;
+}
+
+img.op-center-top,
+.op-center-top img {
+    object-position: center top !important;
+}
+img.op-center-center,
+.op-center-center img {
+    object-position: center center !important;
+}
+img.op-center-bottom,
+.op-center-bottom img {
+    object-position: center bottom !important;
+}
+
+img.filter-dark,
+.filter-dark img {
+    filter: brightness(0.9);
+    -webkit-filter: brightness(0.9);
+}
+
+img.filter-light,
+.filter-light img {
+    filter: brightness(0.5);
+    -webkit-filter: brightness(0.5);
+}
+
+.image {
+    display: flex;
+    align-items: center;
+    &:before {
+        content: '';
+        width: 40px;
+        height: 40px;
+        background-size: 40px 40px;
+        display: inline-block;
+        background-repeat: no-repeat;
+        margin-right: 15px;
+    }
+}
+
+.image-map {
+    &:before {
+        background-image: url($map);
+    }
+}
+
+.image-user {
+    &:before {
+        background-image: url($user);
+    }
+}
+
+.img-profile {
+    max-width: 200px;
+    margin-right: $gutter-size * 2;
+    @media (max-width: $screen-sm-max) {
+        margin-bottom: $gutter-size * 2;
+        align-self: flex-start;
+    }
+}
