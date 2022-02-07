@@ -1,12 +1,12 @@
 {
   "Configuration": {
     "DatabaseName": "test_db",
-    "DatabasePassword": "root",
+    "DatabasePassword": "young",
     "DatabaseType": "MYSQL",
     "DatabaseHost": "localhost:3306",
     "DatabaseUserName": "root",
     "DatabaseUseIntegratedSecurity": "False",
-    "ApplicationRootUrl": "http://localhost:8080/",
+    "ApplicationRootUrl": "http://112.145.85.105:8080/mendix",
     "ScheduledEventExecution": "Specified",
     "MyScheduledEvents": "MendixSSO.SE_CleanupAuthRequest,MendixSSO.DeleteExpiredTokens"
   },

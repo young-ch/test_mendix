@@ -1,4 +1,4 @@
-Buildfile: E:\Studio Tour-main\deployment\build_core.xml
+Buildfile: E:\mendix\test_mendix\deployment\build_core.xml
 
 clean-excluded-jars:
 

@@ -1,0 +1,14 @@
+[rtlauncher:container$] INFO Evictions for component 'project-userlib':
+Evicted E:\mendix\test_mendix\deployment\model\lib\userlib\activation-1.1.jar by E:\mendix\test_mendix\deployment\model\lib\userlib\activation-1.1.1.jar.
+Evicted E:\mendix\test_mendix\deployment\model\lib\userlib\oauth2-oidc-sdk-6.9.jar by E:\mendix\test_mendix\deployment\model\lib\userlib\oauth2-oidc-sdk-8.29.jar.
+Evicted E:\mendix\test_mendix\deployment\model\lib\userlib\oauth2-oidc-sdk-6.14.jar by E:\mendix\test_mendix\deployment\model\lib\userlib\oauth2-oidc-sdk-8.29.jar.
+Evicted E:\mendix\test_mendix\deployment\model\lib\userlib\asm-5.0.4.jar by E:\mendix\test_mendix\deployment\model\lib\userlib\asm-7.1.jar.
+Evicted E:\mendix\test_mendix\deployment\model\lib\userlib\javax.mail-1.6.1.jar by E:\mendix\test_mendix\deployment\model\lib\userlib\javax.mail-1.6.2.jar.
+Evicted E:\mendix\test_mendix\deployment\model\lib\userlib\commons-text-1.8.jar by E:\mendix\test_mendix\deployment\model\lib\userlib\commons-text-1.9.jar.
+Evicted E:\mendix\test_mendix\deployment\model\lib\userlib\nimbus-jose-jwt-7.1.jar by E:\mendix\test_mendix\deployment\model\lib\userlib\nimbus-jose-jwt-8.20.1.jar.
+Evicted E:\mendix\test_mendix\deployment\model\lib\userlib\commons-lang3-3.9.jar by E:\mendix\test_mendix\deployment\model\lib\userlib\commons-lang3-3.11.jar.
+Evicted E:\mendix\test_mendix\deployment\model\lib\userlib\nimbus-jose-jwt-7.8.jar by E:\mendix\test_mendix\deployment\model\lib\userlib\nimbus-jose-jwt-8.20.1.jar.
+[rtlauncher:container$] INFO Container start took 3628. Ready to accept admin requests.
+
+
+

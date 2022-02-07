@@ -1,0 +1,3 @@
+1. Mendix Java action에서 설정하는 input data는 java와 data type이 동일해야 한다. ex) TemplateObject을 object 형식으로 input을 설정한다면 eclipce에서도 IMendixObject tpye으로 받는다.
+
+public StartImportByTemplate(IContext context, IMendixObject TemplateObject, IMendixObject ImportExcelDoc, IMendixObject ImportObjectParameter)

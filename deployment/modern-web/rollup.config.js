@@ -1,13 +1,13 @@
 const {
     nodeResolve,
-} = require("C:/Program Files/Mendix/9.10.1.37625/modeler/tools/node/node_modules/@rollup/plugin-node-resolve");
-const commonjs = require("C:/Program Files/Mendix/9.10.1.37625/modeler/tools/node/node_modules/@rollup/plugin-commonjs");
-const clear = require("C:/Program Files/Mendix/9.10.1.37625/modeler/tools/node/node_modules/rollup-plugin-clear");
-const esbuild = require("C:/Program Files/Mendix/9.10.1.37625/modeler/tools/node/node_modules/rollup-plugin-esbuild");
-const { babel } = require("C:/Program Files/Mendix/9.10.1.37625/modeler/tools/node/node_modules/@rollup/plugin-babel");
-const nodePolyfills = require("C:/Program Files/Mendix/9.10.1.37625/modeler/tools/node/node_modules/rollup-plugin-node-polyfills");
-const mendixResolve = require("C:/Program Files/Mendix/9.10.1.37625/modeler/tools/node/rollup-plugin-mendix-resolve.js");
-const css = require("C:/Program Files/Mendix/9.10.1.37625/modeler/tools/node/node_modules/rollup-plugin-import-css");
+} = require("G:/Mendix/9.10.1.37625/modeler/tools/node/node_modules/@rollup/plugin-node-resolve");
+const commonjs = require("G:/Mendix/9.10.1.37625/modeler/tools/node/node_modules/@rollup/plugin-commonjs");
+const clear = require("G:/Mendix/9.10.1.37625/modeler/tools/node/node_modules/rollup-plugin-clear");
+const esbuild = require("G:/Mendix/9.10.1.37625/modeler/tools/node/node_modules/rollup-plugin-esbuild");
+const { babel } = require("G:/Mendix/9.10.1.37625/modeler/tools/node/node_modules/@rollup/plugin-babel");
+const nodePolyfills = require("G:/Mendix/9.10.1.37625/modeler/tools/node/node_modules/rollup-plugin-node-polyfills");
+const mendixResolve = require("G:/Mendix/9.10.1.37625/modeler/tools/node/rollup-plugin-mendix-resolve.js");
+const css = require("G:/Mendix/9.10.1.37625/modeler/tools/node/node_modules/rollup-plugin-import-css");
 
 const JAVASCRIPT_SOURCE_PATH_REGEX = /javascriptsource/;
 const PLUGGABLE_WIDGETS_PATH_FILTER = "./widgets/**";
@@ -36,8 +36,8 @@ export default {
     },
     plugins: [
         mendixResolve(
-            "C:/Program Files/Mendix/9.10.1.37625/modeler/tools/node/web-resolutions.json",
-            "C:/Program Files/Mendix/9.10.1.37625/modeler/tools/node/node_modules"
+            "G:/Mendix/9.10.1.37625/modeler/tools/node/web-resolutions.json",
+            "G:/Mendix/9.10.1.37625/modeler/tools/node/node_modules"
         ),
         nodePolyfills(),
         esbuild({
@@ -56,7 +56,7 @@ export default {
         }),
         ignore(/react-native/),
         nodeResolve({
-            moduleDirectories: ["C:/Program Files/Mendix/9.10.1.37625/modeler/tools/node/node_modules"]
+            moduleDirectories: ["G:/Mendix/9.10.1.37625/modeler/tools/node/node_modules"]
         }),
         commonjs({ transformMixedEsModules: true, exclude: [/mendix-web/, PLUGGABLE_WIDGETS_PATH_FILTER] }),
         // @rollup/plugin-babel must be placed after @rollup/plugin-commonjs
@@ -65,12 +65,12 @@ export default {
             include: JAVASCRIPT_SOURCE_PATH_REGEX,
             presets: [
                 [
-                    "C:/Program Files/Mendix/9.10.1.37625/modeler/tools/node/node_modules/@babel/preset-env",
+                    "G:/Mendix/9.10.1.37625/modeler/tools/node/node_modules/@babel/preset-env",
                     { targets: { safari: "13" } },
                 ],
             ],
             plugins: [
-                "C:/Program Files/Mendix/9.10.1.37625/modeler/tools/node/node_modules/@babel/plugin-syntax-dynamic-import",
+                "G:/Mendix/9.10.1.37625/modeler/tools/node/node_modules/@babel/plugin-syntax-dynamic-import",
             ],
         }),
         clear({

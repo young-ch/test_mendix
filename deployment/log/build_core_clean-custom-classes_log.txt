@@ -1,7 +1,8 @@
-Buildfile: E:\Studio Tour-main\deployment\build_core.xml
+Buildfile: E:\mendix\test_mendix\deployment\build_core.xml
 
 clean-custom-classes:
 
 BUILD SUCCESSFUL
 Total time: 0 seconds
+
 
